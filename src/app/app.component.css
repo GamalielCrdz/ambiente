@@ -1,0 +1,118 @@
+.container {
+  width:80%; 
+  margin:0 auto;
+}
+.image-cont {
+    display: inline-block;
+    position: relative;
+}
+.image-cont > img {
+  width: 100%;
+/*   height: auto;
+  max-width: 685px;
+  max-height: 374px; */
+ }
+ .point-not-available {
+    background-color: red;
+ }
+ .image-cont a {
+  cursor: pointer;
+  background-color: green;
+  border-radius: 100px;
+  background-repeat: no-repeat;
+  display:block;
+  height:15px;
+  width:18px;
+  position:absolute;
+  line-height: 25px;
+  color:#fff;
+  text-align:center;
+  font-size:1px;
+  background-position: 0 -27px;
+ }
+
+.image-cont a:hover {
+  background-position: 0 0;
+}  
+a#first_element {
+margin-left: 16.92%;
+    margin-top: -14.02%;
+}
+
+a#second_element {
+margin-left: 23.68%;
+    margin-top: -16.46%;
+
+}
+a#third_element {
+     margin-left: 40.84%;
+    margin-top: -15.8%;
+}
+a#fourth_element {
+margin-left: 41.44%;
+    margin-top: -20.04%;
+}
+a#five_element {
+margin-left: 48.84%;
+    margin-top: -14.54%;
+}
+a#six_element {
+margin-left: 62.4%;
+    margin-top: -15.54%;
+}
+a#seve_element {
+    margin-left: 81.2%;
+    margin-top: -17.9%;
+}
+a#eight_element {
+margin-left: 28.84%;
+    margin-top: -27.04%;
+}
+a#nine_element {
+  margin-left: 42.30%;
+    margin-top: -24.44%;
+}
+a#ten_element {
+  margin-left: 48.54%;
+    margin-top: -33.04%;
+}
+a#eleven_element {
+  margin-left: 49.84%;
+    margin-top: -28.04%;
+}
+a#twenty_element {
+    margin-left: 58.54%;
+    margin-top: -28.04%;
+}
+a#twnone_element {
+    margin-left: 70.84%;
+    margin-top: -26.04%;
+}
+a#twtwo_element {
+     margin-left: 77.54%;
+    margin-top: -23.04%;
+}
+a#twthree_element {
+    margin-left: 49.84%;
+    margin-top: -19.44%;
+}
+a#twfourth_element {
+      margin-left: 55.34%;
+    margin-top: -12.74%;
+}
+a#twfive_element {
+margin-left: 60.84%;
+    margin-top: -20.04%;
+}
+/* a#third_element {
+  margin-left: 5.84%;
+  margin-top: -16.04%;
+}
+a#third_element {
+  margin-left: 5.84%;
+  margin-top: -16.04%;
+}
+a#third_element {
+  margin-left: 5.84%;
+  margin-top: -16.04%;
+} */

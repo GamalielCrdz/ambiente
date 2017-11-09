@@ -1,0 +1,27 @@
+<div class="dialog-content-wrapper">
+  <mat-toolbar mat-dialog-title class="mat-accent m-0">
+    <div fxFlex fxLayout="row" fxLayoutAlign="space-between center">
+      {{data.name}}
+      <button mat-button class="mat-icon-button" (click)="dialogRef.close()">
+        <mat-icon>close</mat-icon>
+      </button>
+    </div>
+  </mat-toolbar>
+  <div mat-dialog-content class="p-24 m-0" fusePerfectScrollbar>
+    <h1>Informacion del contenedor</h1>
+    <h3>
+      Ubicacion:{{data.building}}
+    </h3>
+    <h3>
+      Capacidad del Contenedor:{{data.capacityAvailable}} Kg
+    </h3>
+    <h3>
+      Capacidad Actual:{{data.actualCapacity}} kg
+    </h3>
+  </div>
+  <div mat-dialog-actions class="m-0 p-16">
+    <button mat-raised-button class="save-button mat-warn" aria-label="SAVE" (click)="dialogRef.close(1)" mat-tooltip="Eliminar">
+     Okay
+    </button>
+  </div>
+</div>
