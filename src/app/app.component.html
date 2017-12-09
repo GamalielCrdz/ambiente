@@ -1,22 +1,28 @@
+<ul style="flex-direction: row; display: flex;">
+  <li><img src="assets/images/logoUANL.png" height="75px" width="75px" alt=""></li>
+  <li style="margin-left: auto; margin-right: auto; display: flex "><h2>Sistemas de Contenedores FIME</h2></li>
+  <li><img src="assets/images/logoFime.png" width="170px" alt=""></li>
+</ul>
+
 <div class="container" > 
   <div class="image-cont">
-      <img src="assets/images/croquis_fime2.jpg" alt="">
-  <a (click)="openModal(0)" id="twfive_element"><p></p></a> 
-  <a (click)="openModal(1)" id="first_element"><p></p></a>
-  <a (click)="openModal(2)" id="second_element"><p></p></a>
-  <a (click)="openModal(3)" id="third_element"><p></p></a>
-  <a (click)="openModal(4)" id="fourth_element"><p></p></a>
-  <a (click)="openModal(5)" id="five_element"><p></p></a>
-  <a (click)="openModal(6)" id="six_element"><p></p></a>
-  <a (click)="openModal(7)" id="seve_element"><p></p></a>
-  <a (click)="openModal(8)" id="eight_element"><p></p></a>
-  <a (click)="openModal(9)" id="nine_element"><p></p></a>
-  <a (click)="openModal(10)" id="ten_element"><p></p></a>
-  <a (click)="openModal(11)" id="eleven_element"><p></p></a>
-  <a (click)="openModal(12)" id="twenty_element"><p></p></a>
-  <a (click)="openModal(13)" id="twnone_element"><p></p></a>
-  <a (click)="openModal(14)" id="twtwo_element"><p></p></a>
-  <a (click)="openModal(15)" id="twthree_element"><p></p></a>
-  <a (click)="openModal(16)" id="twfourth_element"><p></p></a>
+  <img src="assets/images/croquis_fime2.jpg" alt="">
+  <a [ngClass]="{'point-not-available': !(trash[0].capacityAvailable == 'no')}" (click)="openModal(0)" id="twfive_element"><p></p></a> 
+  <a [ngClass]="{'point-not-available': !(trash[1].capacityAvailable == 'no')}" (click)="openModal(1)" id="first_element"><p></p></a>
+  <a [ngClass]="{'point-not-available': !(trash[2].capacityAvailable == 'no')}" (click)="openModal(2)" id="second_element"><p></p></a>
+  <a [ngClass]="{'point-not-available': !(trash[3].capacityAvailable == 'no')}" (click)="openModal(3)" id="third_element"><p></p></a>
+  <a [ngClass]="{'point-not-available': !(trash[4].capacityAvailable == 'no')}" (click)="openModal(4)" id="fourth_element"><p></p></a>
+  <a [ngClass]="{'point-not-available': !(trash[5].capacityAvailable == 'no')}" (click)="openModal(5)" id="five_element"><p></p></a>
+  <a [ngClass]="{'point-not-available': !(trash[6].capacityAvailable == 'no')}" (click)="openModal(6)" id="six_element"><p></p></a>
+  <a [ngClass]="{'point-not-available': !(trash[7].capacityAvailable == 'no')}" (click)="openModal(7)" id="seve_element"><p></p></a>
+  <a [ngClass]="{'point-not-available': !(trash[8].capacityAvailable == 'no')}" (click)="openModal(8)" id="eight_element"><p></p></a>
+  <a [ngClass]="{'point-not-available': !(trash[9].capacityAvailable == 'no')}" (click)="openModal(9)" id="nine_element"><p></p></a>
+  <a [ngClass]="{'point-not-available': !(trash[10].capacityAvailable == 'no')}" (click)="openModal(10)" id="ten_element"><p></p></a>
+  <a [ngClass]="{'point-not-available': !(trash[11].capacityAvailable == 'no')}" (click)="openModal(11)" id="eleven_element"><p></p></a>
+  <a [ngClass]="{'point-not-available': !(trash[12].capacityAvailable == 'no')}" (click)="openModal(12)" id="twenty_element"><p></p></a>
+  <a [ngClass]="{'point-not-available': !(trash[13].capacityAvailable == 'no')}" (click)="openModal(13)" id="twnone_element"><p></p></a>
+  <a [ngClass]="{'point-not-available': !(trash[14].capacityAvailable == 'no')}" (click)="openModal(14)" id="twtwo_element"><p></p></a>
+  <!-- <a [ngClass]="{'point-not-available': !(trash[15].capacityAvailable == 'no')}" (click)="openModal(15)" id="twthree_element"><p></p></a>
+  <a [ngClass]="{'point-not-available': !(trash[16].capacityAvailable == 'no')}" (click)="openModal(16)" id="twfourth_element"><p></p></a> -->
     </div>
 </div>

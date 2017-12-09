@@ -12,102 +12,106 @@ export class AppComponent {
   trash: any[] = [{
     name: "contenedor 1",
     building: "Edificio 2",
-    capacityAvailable: 20,
+    capacityAvailable: "si",
     actualCapacity: 3
   },
   {
     name: "contenedor 2",
     building: "Edificio 2",
-    capacityAvailable: 20,
+    capacityAvailable: "no",
     actualCapacity: 3
   },
   {
     name: "contenedor 3",
     building: "Edificio 3",
-    capacityAvailable: 20,
+    capacityAvailable: "si",
     actualCapacity: 3
   },
   {
     name: "contenedor 4",
     building: "Edificio 3",
-    capacityAvailable: 20,
+    capacityAvailable: "no",
     actualCapacity: 3
   },
   {
     name: "contenedor 5",
     building: "Edificio 4",
-    capacityAvailable: 20,
+    capacityAvailable: "si",
     actualCapacity: 3
   },
   {
     name: "contenedor 6",
     building: "Edificio 4",
-    capacityAvailable: 20,
+    capacityAvailable: "no",
     actualCapacity: 3
   },
   {
     name: "contenedor 7",
     building: "Edificio 5",
-    capacityAvailable: 20,
+    capacityAvailable: "no",
     actualCapacity: 3
   },
   {
     name: "contenedor 8",
     building: "Edificio 5",
-    capacityAvailable: 20,
+    capacityAvailable: "si",
     actualCapacity: 3
   },
   {
     name: "contenedor 9",
     building: "Edificio 6",
-    capacityAvailable: 20,
+    capacityAvailable: "no",
     actualCapacity: 3
   },
   {
     name: "contenedor 10",
     building: "Edificio 6",
-    capacityAvailable: 20,
+    capacityAvailable: "si",
     actualCapacity: 3
   },
   {
     name: "contenedor 11",
     building: "Edificio 7",
-    capacityAvailable: 20,
+    capacityAvailable: "si",
     actualCapacity: 3
   },
   {
     name: "contenedor 12",
     building: "Edificio 7",
-    capacityAvailable: 20,
+    capacityAvailable: "si",
     actualCapacity: 3
   },
   {
     name: "contenedor 13",
     building: "Edificio 8",
-    capacityAvailable: 20,
+    capacityAvailable: "no",
     actualCapacity: 3
   },
   {
     name: "contenedor 14",
     building: "Edificio 8",
-    capacityAvailable: 20,
+    capacityAvailable: "no",
     actualCapacity: 3
   },
   {
     name: "contenedor 15",
     building: "Edificio 1",
-    capacityAvailable: 20,
+    capacityAvailable: "no",
     actualCapacity: 3
   },
   {
     name: "contenedor 16",
     building: "Edificio 2",
-    capacityAvailable: 20,
+    capacityAvailable: "no",
     actualCapacity: 3
   },
   ];
 
-  constructor(public dialog: MatDialog) { }
+  constructor(public dialog: MatDialog) {
+
+
+    alert(this.determineTrashCan());
+  }
 
   openModal(id: number) {
     console.log(this.trash[id]);
@@ -125,6 +129,16 @@ export class AppComponent {
           console.log('The dialog was closed');
           this.animal = result;
         }); */
+  }
+
+  public determineTrashCan():string {
+    let fullTrash: string = "Los contenedores: \n";
+    for (let key of this.trash) {
+      if (key.capacityAvailable != "no") {
+        fullTrash += key.name + "\n";
+      }
+    }
+    return fullTrash += "Estan llenos";
   }
 
 }

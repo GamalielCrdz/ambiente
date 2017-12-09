@@ -1,23 +1,28 @@
 <div class="dialog-content-wrapper">
   <mat-toolbar mat-dialog-title class="mat-accent m-0">
     <div fxFlex fxLayout="row" fxLayoutAlign="space-between center">
-      {{data.name}}
+      <span>{{data.name}}</span>
       <button mat-button class="mat-icon-button" (click)="dialogRef.close()">
         <mat-icon>close</mat-icon>
       </button>
     </div>
   </mat-toolbar>
-  <div mat-dialog-content class="p-24 m-0" fusePerfectScrollbar>
-    <h1>Informacion del contenedor</h1>
-    <h3>
-      Ubicacion:{{data.building}}
-    </h3>
-    <h3>
-      Capacidad del Contenedor:{{data.capacityAvailable}} Kg
-    </h3>
-    <h3>
-      Capacidad Actual:{{data.actualCapacity}} kg
-    </h3>
+  <div mat-dialog-content class="p-24 m-0" style="display: flex;" fusePerfectScrollbar>
+    <div style="width: 50%" >
+      <img width="100%" height="90%" src="https://classroomclipart.com/images/gallery/Animations/Science/recycle-trash-can-animation.gif" alt="">
+    </div>
+    <div style="width: 50%">
+      <h1>Informacion del contenedor</h1>
+      <h3>
+        Ubicacion:{{data.building}}
+      </h3>
+      <h3>
+        Contenedor lleno:{{data.capacityAvailable}}
+      </h3>
+      <!-- <h3>
+        Capacidad Actual:{{data.actualCapacity}} kg
+      </h3> -->
+    </div>
   </div>
   <div mat-dialog-actions class="m-0 p-16">
     <button mat-raised-button class="save-button mat-warn" aria-label="SAVE" (click)="dialogRef.close(1)" mat-tooltip="Eliminar">
